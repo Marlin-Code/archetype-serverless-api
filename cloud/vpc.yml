@@ -3,11 +3,13 @@ Description:  This template deploys a VPC, with a pair of public and private sub
   route on the public subnets.
 
 Parameters:
+  # this is the overall IP Range of the VPC. This CIDR block (10.192.0.0/16) is standard
   VpcCIDR:
     Description: Please enter the IP range (CIDR notation) for this VPC
     Type: String
     Default: 10.192.0.0/16
-
+    
+  # Public subnets are used to communicate with the internet
   PublicSubnet1CIDR:
     Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
     Type: String
@@ -18,6 +20,7 @@ Parameters:
     Type: String
     Default: 10.192.11.0/24
 
+  # Private subnets contain services that typically don't need to talk to the internet 
   PrivateSubnet1CIDR:
     Description: Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone
     Type: String
