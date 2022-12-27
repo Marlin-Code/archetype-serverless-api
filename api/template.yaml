@@ -17,10 +17,6 @@ Globals:
     MemorySize: 128
     Architectures:
       - x86_64
-    VpcConfig:
-      SubnetIds: 
-        - !ImportValue default-vpc-PrivateSubnet1
-        - !ImportValue default-vpc-PrivateSubnet2 
 
 # Resources declares the AWS resources that you want to include in the stack
 # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
