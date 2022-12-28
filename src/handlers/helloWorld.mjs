@@ -1,7 +1,7 @@
 // Create clients and set shared const values outside of the handler.
 
 /**
- * A simple example includes a HTTP get method to get one item by id from a DynamoDB table.
+ * A simple example includes a HTTP get method to display a Hello message
  */
 export const helloWorldHandler = async (event) => {
   if (event.httpMethod !== 'GET') {

@@ -1,6 +1,6 @@
 {
     "httpMethod": "GET",
     "pathParameters": {
-        "name": "name1"
+        "name": "Test Name!"
     }
 }
